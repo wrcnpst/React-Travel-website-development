@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "nodemon gateway.js"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cores": "^0.8.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}

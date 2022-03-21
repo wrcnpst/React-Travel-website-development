@@ -1,0 +1,85 @@
+.app-main-grid {
+    display: grid;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 25px;
+    padding-bottom: 50px;
+    grid-template-areas: 'left left right right';
+}
+
+.app-left-grid {
+    grid-area: left;
+}
+
+.app-right-nested-grid {
+    grid-area: right;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 300px;
+}
+
+.imgage-nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: fit-content;
+    gap: 18px;
+}
+
+.Main-Image {
+    width: 200px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    float: right
+}
+
+.Content-Title {
+    font-size: 23px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+a.Content-Title:link, a.Content-Title:visited{
+    color: black;
+    text-decoration:none;
+}
+
+a.Content-Title:hover {
+    color: rgb(45, 156, 219);
+}
+
+.Content-Description {
+    font-size: 14px;
+    color: darkgray;
+}
+
+.Content-Tag {
+    font-size: small;
+    color: darkgray;
+    padding-top: 5px;
+}
+
+.spacer {
+    padding-left: 3px;
+    padding-right: 3px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.spacer:hover {
+    color: rgb(45, 156, 219);
+}
+
+.Content-SubImage {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.App-link, a.App-link:visited {
+    color: rgb(45, 156, 219);
+}
+
